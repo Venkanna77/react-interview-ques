@@ -30,7 +30,7 @@ export default function App() {
     let a = e.target.value;
     let new_list = country_list.filter((i) => {
       if (a == '') return i;
-      else return i.toLocaleLowerCase().includes(a);
+      else return i.toLocaleLowerCase().includes(a.toLocaleLowerCase());
     });
     setResult(new_list);
   };
